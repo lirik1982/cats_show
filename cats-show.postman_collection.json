@@ -1,0 +1,383 @@
+{
+	"info": {
+		"_postman_id": "7b1d4454-5c83-4bd7-9d56-0c5876f63765",
+		"name": "cats-show",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30022801"
+	},
+	"item": [
+		{
+			"name": "Зарегистрировать участника",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"email\": \"reader124@mail.ru\",\n        \"password\": \"!Qwerty1\",\n        \"username\": \"tester24\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/register/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Получить токен участника",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"email\": \"reader123@mail.ru\",\n        \"password\": \"!Qwerty1\",\n        \"username\": \"tester23\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Зарегистрировать кошку",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Мурка\",\n    \"breed_id\": 1,\n    \"age\": 15,\n    \"color\": \"серый\",\n    \"description\": \"Отличный экстерьер\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/cats/addcat/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"addcat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Посмотреть список кошек",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "breed",
+						"value": "10",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/cats/list/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"list",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Добавить породу",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Сибирская\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/cats/addbreed/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"addbreed",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Посмотреть породы",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cats/breedlist/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"breedlist",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Обновить данные кошки",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 6,\n    \"name\": \"проба\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/cats/update/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"update",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Удалить кошку",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"description\": \"vvv\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/cats/detail/9/?name=ttt",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"detail",
+						"9",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "ttt"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Оценить кошку",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cat_id\": 9,\n    \"rate\": 3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/cats/rate/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"rate",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Рейтинг кошек",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZXhwIjoxNzI3ODgzMDQyfQ.vZ5Rls7vm9X7sj5pZhkln5_te30SrCU9GN0zxFqwGN8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/cats/ratetotal/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"cats",
+						"ratetotal",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
