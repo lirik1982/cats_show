@@ -1,0 +1,37 @@
+[
+  {
+    "model": "cats.catbreed",
+    "pk": 1,
+    "fields": {
+      "name": "Мейн-кун"
+    }
+  },
+  {
+    "model": "cats.catbreed",
+    "pk": 2,
+    "fields": {
+      "name": "Шотландская вислоухая"
+    }
+  },
+  {
+    "model": "cats.catbreed",
+    "pk": 3,
+    "fields": {
+      "name": "Бенгальская"
+    }
+  },
+  {
+    "model": "cats.catbreed",
+    "pk": 4,
+    "fields": {
+      "name": "Русская голубая"
+    }
+  },
+  {
+    "model": "cats.catbreed",
+    "pk": 5,
+    "fields": {
+      "name": "Сибирская"
+    }
+  }
+]

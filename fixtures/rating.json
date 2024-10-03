@@ -1,0 +1,245 @@
+[
+  {
+    "model": "cats.rating",
+    "pk": 1,
+    "fields": {
+      "user": 2,
+      "cat": 1,
+      "rating": 3
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 2,
+    "fields": {
+      "user": 3,
+      "cat": 2,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 3,
+    "fields": {
+      "user": 4,
+      "cat": 3,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 4,
+    "fields": {
+      "user": 5,
+      "cat": 4,
+      "rating": 4
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 5,
+    "fields": {
+      "user": 6,
+      "cat": 5,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 6,
+    "fields": {
+      "user": 7,
+      "cat": 6,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 7,
+    "fields": {
+      "user": 8,
+      "cat": 7,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 8,
+    "fields": {
+      "user": 9,
+      "cat": 8,
+      "rating": 4
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 9,
+    "fields": {
+      "user": 1,
+      "cat": 9,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 10,
+    "fields": {
+      "user": 2,
+      "cat": 10,
+      "rating": 2
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 11,
+    "fields": {
+      "user": 3,
+      "cat": 11,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 12,
+    "fields": {
+      "user": 4,
+      "cat": 12,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 13,
+    "fields": {
+      "user": 5,
+      "cat": 13,
+      "rating": 4
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 14,
+    "fields": {
+      "user": 6,
+      "cat": 14,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 15,
+    "fields": {
+      "user": 7,
+      "cat": 15,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 16,
+    "fields": {
+      "user": 8,
+      "cat": 16,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 17,
+    "fields": {
+      "user": 9,
+      "cat": 17,
+      "rating": 3
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 18,
+    "fields": {
+      "user": 10,
+      "cat": 18,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 19,
+    "fields": {
+      "user": 1,
+      "cat": 19,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 20,
+    "fields": {
+      "user": 2,
+      "cat": 20,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 21,
+    "fields": {
+      "user": 3,
+      "cat": 3,
+      "rating": 4
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 22,
+    "fields": {
+      "user": 4,
+      "cat": 1,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 23,
+    "fields": {
+      "user": 5,
+      "cat": 2,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 24,
+    "fields": {
+      "user": 6,
+      "cat": 2,
+      "rating": 4
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 25,
+    "fields": {
+      "user": 7,
+      "cat": 1,
+      "rating": 5
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 26,
+    "fields": {
+      "user": 8,
+      "cat": 5,
+      "rating": 3
+    }
+  },
+  {
+    "model": "cats.rating",
+    "pk": 27,
+    "fields": {
+      "user": 9,
+      "cat": 6,
+      "rating": 5
+    }
+  }
+]

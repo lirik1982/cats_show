@@ -24,12 +24,17 @@ class Cat(models.Model):
 
 
 class Rating(models.Model):
+    class Rates(models.IntegerChoices):
+        BAD = 1
+        AVERAGE = 2
+        GOOD = 3
+        VERYGOOD = 4
+        EXCELLENT = 5
+
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     cat = models.ForeignKey('Cat', on_delete=models.CASCADE)
-    rating = models.IntegerField(choices=[(1, 'Bad'), (2, 'Average'), (3, 'Good'), (4, 'Very Good'),
-                                          (5, 'Excellent')], default=3, verbose_name='Оценка')
+    rating = models.IntegerField(choices=Rates, default=3, verbose_name='Оценка')
 
-    def average_rate(self):
-        raise ValueError("The average_rate attribute is only accessible if the queryset is annotated")
-
+    class Meta:
+        unique_together = (('user', 'cat'),)
 

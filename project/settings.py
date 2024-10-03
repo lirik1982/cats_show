@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'authentication',
-    'api',
     'rest_framework',
     'django_filters',
     'rest_framework_swagger',
@@ -52,6 +51,7 @@ INSTALLED_APPS = [
     'jwt',
     'project',
     'cats',
+    'psycopg2'
 ]
 
 MIDDLEWARE = [
@@ -94,6 +94,7 @@ DATABASES = {
         'NAME': 'django_db',
         'USER': 'django_user',
         'PASSWORD': 'django_password',
+        # 'HOST': 'localhost',
         'HOST': 'db',
         'PORT': '5432',
     }
@@ -146,6 +147,6 @@ REST_FRAMEWORK = {
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'NON_FIELD_ERRORS_KEY': 'error',
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'api.backends.JWTAuthentication',
+        'authentication.backends.JWTAuthentication',
     ),
 }

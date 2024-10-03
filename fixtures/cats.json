@@ -1,0 +1,242 @@
+[
+  {
+    "model": "cats.cat",
+    "pk": 1,
+    "fields": {
+      "name": "Мурка",
+      "owner": 1,
+      "breed": 1,
+      "age": 15,
+      "color": "серый",
+      "description": "Ласковая"
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 2,
+    "fields": {
+      "name": "Мурка",
+      "owner": 2,
+      "breed": 2,
+      "age": 21,
+      "color": "серый",
+      "description": "Нарушение прикуса"
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 3,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 3,
+      "breed": 3,
+      "age": 22,
+      "color": "рыжий",
+      "description": "Победитель прошлой выставки"
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 4,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 4,
+      "breed": 4,
+      "age": 23,
+      "color": "черный",
+      "description": "Прикольная"
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 5,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 5,
+      "breed": 1,
+      "age": 22,
+      "color": "серый",
+      "description": "Красивая"
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 6,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 6,
+      "breed": 2,
+      "age": 21,
+      "color": "серый",
+      "description": "Злюка"
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 7,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 7,
+      "breed": 3,
+      "age": 33,
+      "color": "серый",
+      "description": "Отличный прикус"
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 8,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 8,
+      "breed": 4,
+      "age": 33,
+      "color": "рыжий",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 9,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 9,
+      "breed": 1,
+      "age": 22,
+      "color": "черный",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 10,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 10,
+      "breed": 2,
+      "age": 15,
+      "color": "серый",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 11,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 1,
+      "breed": 3,
+      "age": 22,
+      "color": "серый",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 12,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 2,
+      "breed": 4,
+      "age": 55,
+      "color": "рыжий",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 13,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 3,
+      "breed": 1,
+      "age": 44,
+      "color": "черный",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 14,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 4,
+      "breed": 2,
+      "age": 33,
+      "color": "серый",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 15,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 5,
+      "breed": 3,
+      "age": 15,
+      "color": "серый",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 16,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 6,
+      "breed": 1,
+      "age": 15,
+      "color": "серый",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 17,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 7,
+      "breed": 2,
+      "age": 15,
+      "color": "рыжий",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 18,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 8,
+      "breed": 3,
+      "age": 15,
+      "color": "черный",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 19,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 9,
+      "breed": 2,
+      "age": 15,
+      "color": "серый",
+      "description": ""
+    }
+  },
+  {
+    "model": "cats.cat",
+    "pk": 20,
+    "fields": {
+      "name": "Мурка2",
+      "owner": 10,
+      "breed": 3,
+      "age": 15,
+      "color": "серый",
+      "description": ""
+    }
+  }
+]
