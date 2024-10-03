@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user\": {\n        \"email\": \"reader124@mail.ru\",\n        \"password\": \"!Qwerty1\",\n        \"username\": \"tester24\"\n    }\n}",
+					"raw": "{\n\n    \"email\": \"reader8@mail.ru\",\n    \"password\": \"!Qwerty1\",\n    \"username\": \"tester8\"\n    \n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,14 +21,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/api/user/register/",
+					"raw": "localhost:8000/auth/register/",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"api",
-						"user",
+						"auth",
 						"register",
 						""
 					]
@@ -46,7 +45,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"user\": {\n        \"email\": \"reader123@mail.ru\",\n        \"password\": \"!Qwerty1\",\n        \"username\": \"tester23\"\n    }\n}",
+					"raw": "{\n    \"password\": \"!Qwerty1\",\n    \"username\": \"tester8\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -54,14 +53,13 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/api/user/login/",
+					"raw": "localhost:8000/auth/login/",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
-						"api",
-						"user",
+						"auth",
 						"login",
 						""
 					]
@@ -119,7 +117,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MTAsImV4cCI6MTcyNzk1NDU5MX0.u9znAslYlX183lq_OtTB9fuo3KrxKObTZQ0MrZx4I5I",
 							"type": "string"
 						}
 					]
@@ -142,54 +140,26 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/cats/list/",
+					"raw": "localhost:8000/cats/",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
 						"cats",
-						"list",
 						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Добавить породу",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
+					],
+					"query": [
 						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
-							"type": "string"
+							"key": "id",
+							"value": "6",
+							"disabled": true
+						},
+						{
+							"key": "breed",
+							"value": "9",
+							"disabled": true
 						}
-					]
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"name\": \"Сибирская\"\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "localhost:8000/cats/addbreed/",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"cats",
-						"addbreed",
-						""
 					]
 				}
 			},
@@ -277,11 +247,11 @@
 						}
 					]
 				},
-				"method": "PATCH",
+				"method": "DELETE",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"description\": \"vvv\"\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -289,22 +259,15 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/cats/detail/9/?name=ttt",
+					"raw": "localhost:8000/cats/3/",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
 						"cats",
-						"detail",
-						"9",
+						"3",
 						""
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "ttt"
-						}
 					]
 				}
 			},
@@ -318,7 +281,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MiwiZXhwIjoxNzI3ODUzMDM5fQ.N51Vul9aISO5_4RIRRKq9At4VDuk3FLMkC4Akh4y8BA",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NSwiZXhwIjoxNzI3OTIxOTk4fQ.JmAwpFqSnl2F8iCCJVgmEKUOyLeRofjzGwbfcLOqqYM",
 							"type": "string"
 						}
 					]
@@ -327,7 +290,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"cat_id\": 9,\n    \"rate\": 3\n}",
+					"raw": "{\n    \"rating\": 5\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -335,44 +298,15 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8000/cats/rate/",
+					"raw": "localhost:8000/cats/2/rate/",
 					"host": [
 						"localhost"
 					],
 					"port": "8000",
 					"path": [
 						"cats",
+						"2",
 						"rate",
-						""
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "Рейтинг кошек",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6MywiZXhwIjoxNzI3ODgzMDQyfQ.vZ5Rls7vm9X7sj5pZhkln5_te30SrCU9GN0zxFqwGN8",
-							"type": "string"
-						}
-					]
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "localhost:8000/cats/ratetotal/",
-					"host": [
-						"localhost"
-					],
-					"port": "8000",
-					"path": [
-						"cats",
-						"ratetotal",
 						""
 					]
 				}
